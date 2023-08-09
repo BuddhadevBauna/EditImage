@@ -1,0 +1,75 @@
+footer{
+    background-color: blue;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.footer-content{
+    padding: 0 8% 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: context-menu;
+    text-align: center;
+}
+.footer-content .logo{
+    color: rgba(255, 255, 255, 0.925);
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    word-spacing: 0.3rem;
+    cursor: pointer;
+}
+.footer-content h1{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.925);
+    word-spacing: 0.1rem;
+    letter-spacing: 1px;
+}
+.footer-content h1 i{
+    color: rgb(0, 255, 13);
+}
+.footer-content .contact{
+    padding-top: 1.9rem;
+}
+.footer-content .contact .icon{
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+}
+.footer-content .contact .icon i{
+    height: 2.2rem !important;
+    width: 2.2rem !important;
+    background-color: #e4e4e4;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 2.3;
+    color: blue;
+    cursor: pointer;
+}
+.footer-content .contact .icon i:hover{
+    background-color: white;
+    font-size: 1.2rem;
+    line-height: 1.9;
+}
+@media(max-width: 730px){
+    .footer-content{
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+    .footer-content .contact{
+        padding: 0;
+    }
+    .footer-content .contact h1{
+        margin: 0;
+        margin-bottom: 0.3rem;
+    }
+    .footer-content .logo{
+        padding: 1rem 0 0.4rem;
+    }
+    .footer-content > h1{
+        padding-bottom: 0.4rem;
+    }
+}

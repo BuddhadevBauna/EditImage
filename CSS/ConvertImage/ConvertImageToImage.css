@@ -1,0 +1,9 @@
+.setting-content{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+.setting-content select{
+    margin-top: 1.5rem;
+    border-radius: 0.4rem;
+}

@@ -1,0 +1,106 @@
+#features{
+    padding: 0 8% 4rem;
+    background-color:white;
+}
+#features h1{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2rem 0 0.6rem;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    word-spacing: 0.4rem;
+    color: blueviolet;
+}
+.content{
+    display: grid;
+    gap: 0.5rem;
+}
+.content .content-list{
+    list-style-type: none;
+    border-radius: 0.6rem;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+.content .content-list:hover{
+    background-color: blue;
+}
+.content .content-list .content-link{
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    color: black;
+}
+.content .content-list:hover .content-link{
+    color: white;
+}
+.content .content-list .content-link .content-icon{
+    font-size: 2.5rem;
+    padding-top: 0.6rem;
+}
+.content .content-list .content-link .content-details h2{
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+.content .content-list .content-link .content-details p{
+    color: grey;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.content .content-list:hover .content-link p{
+    color: rgba(255, 255, 255, 0.87);
+}
+/* css Style above 1150 width of screen */
+@media(min-width: 1150px){
+    #features{
+        display: grid;
+        grid-template-columns: 1fr 0.5fr;
+        column-gap: 2rem;
+    }
+    .second-menu{
+        order: 1;
+    }
+    .first-content{
+        grid-template-columns: repeat(2, 1fr);
+        order: 2;
+    }
+    .second-content{
+        grid-template-rows: 1fr 1fr;
+        order: 3;
+    }
+}
+/* css Style bellow 1149 width of screen */
+@media(max-width: 1149px){
+    .content{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+/* css Style bellow 650 width of screen */
+@media(max-width: 750px){
+    .content{
+        grid-template-columns: 1fr;
+    }
+    .content .content-list .content-link{
+        padding: 1.5rem 1rem;
+    }
+}
+/* css Style bellow 450 width of screen */
+@media(max-width: 450px){
+    #features h1.menu{
+        font-size: 1.3rem;
+    }
+    .content .content-list .content-link{
+        padding: 1rem;
+    }
+}
+/* css Style bellow 800 width of screen */
+@media(max-width: 800px){
+    #features h1.menu{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width: 400px){
+    #features h1.menu{
+        font-size: 1.1rem;
+    }
+}

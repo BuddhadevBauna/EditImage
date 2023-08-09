@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mirrorImage</title>
+    <!-- fevicon -->
+    <link rel="icon" href="../Image/favicon.ico?v=2">
+    <!-- css style -->
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/uploadingBoxAndSetting.css">
+    <link rel="stylesheet" href="../CSS/EditImage/mirror.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="sidebar-container">
+        <div class="nav">
+            <label class="menu-icon" for=""><i class="fa-solid fa-bars"></i></label>
+            <div class="nav-content">
+                <a class="brand" href="../index.html"><img src="../Image/brand.png" alt="brand-img"></a>
+                <ul class="sidebar sidebarGo">
+                    <li class="first-list">
+                        <a class="menu first-menu" href="#">edit image<i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="first">
+                            <li class="list-item"><a href="./resize.html" target="_self"><i class="fa-solid fa-maximize"></i>resize image</a></li>
+                            <li class="list-item"><a href="./compress.html" target="_self"><i class="fa-solid fa-down-left-and-up-right-to-center"></i>compress image</a></li>
+                            <li class="list-item"><a href="./rotate.html" target="_self"><i class="fa-solid fa-rotate"></i>rotate image</a></li>
+                            <li class="list-item"><a href="./mirror.html" target="_self"><i class="fa-solid fa-pen-nib"></i></i>mirror image</a></li>
+                        </ul>
+                    </li>
+                    <li class="second-list">
+                        <a class="menu second-menu" href="#">convert image<i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="second">
+                            <li class="list-item"><a href="./ConvertImageToImage.html" target="_self"><i class="fa-solid fa-file-image"></i>Convert Image To Image</a></li>
+                            <li class="list-item"><a href="./ConvertImageToPdf.html" target="_self"><i class="fa-solid fa-file-pdf"></i>Convert Image To Pdf</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="uploading-box">
+        <div id="main">
+          <div class="wrapper">
+            <p>Upload your picture</p>
+            <div class="upload-box">
+              <input type="file" hidden>
+              <i class="fa-solid fa-images"></i>
+              <span class="first">Drag & Drop</span>
+              <span class="second">or <span class="button">Browse</span> </span>
+              <span class="third">Support: JPEG, JPG, PNG, GIF</span>
+            </div>
+            <small>Please upload mentioned image format.</small>
+          </div>
+        </div>
+        <div id="setting">
+            <h1>mirror image</h1>
+            <div class="setting-content">
+                <div class="horizontal">
+                    <i class="fa-solid fa-right-left"></i>
+                    <p>Horizontal</p>
+                </div>
+                <div class="vertical">
+                    <i class="fa-solid fa-right-left fa-rotate-90"></i>
+                    <p>Vertical</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="button">
+        <button class="btn refresh-btn" onclick="location.href='../index.html'">Main Page</button>
+        <button class="btn download-btn">Download Image</button>
+    </section>
+    <script src="../JS/index.js"></script>
+    <script src="../JS/uploadingBoxAndSetting.js"></script>
+    <script src="../JS/EditImage/mirror.js"></script>
+    <script src="../JS/EditImage/download.js"></script>
+</body>
+</html>

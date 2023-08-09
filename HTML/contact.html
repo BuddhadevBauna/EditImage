@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactMe</title>
+    <!-- fevicon -->
+    <link rel="icon" href="../Image/favicon.ico?v=2">
+    <!-- css style -->
+    <link rel="stylesheet" href="../CSS/MainPage/Footer/contact.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="contact-form" class="contact-form">
+        <div class="container"> 
+            <h1>Please fill-up the all box</h1>
+            <div class="message-me">
+                <form action="">
+                    <div class="form-container">
+                        <input type="text" name="name" id="name" placeholder="Your Name..." autocomplete="off">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <small>Error Msg</small>
+                    </div>
+                    <div class="form-container">
+                        <input name="email" id="email" placeholder="Your Email..." autocomplete="off">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <small>Error Msg</small>
+                    </div>
+                    <div id="last-div" class="form-container">
+                        <textarea name="message" id="message" cols="10" rows="4" placeholder="How Can I Help You?... "></textarea>
+                        <small>Error Msg</small>
+                    </div>
+                    <input type="submit" value="Send Message" class="btn message-btn" name="">
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="../JS/MainPage/Footer/contact.js"></script>
+    <!-- Mail SMTP -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- Sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

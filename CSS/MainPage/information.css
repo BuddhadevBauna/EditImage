@@ -1,0 +1,83 @@
+.information{
+    display: flex;
+    flex-direction: column;
+    padding: 0 8% 10rem;
+}
+hr{
+    border: 8px none coral;
+    border-top-style: dotted;
+    width: 15%;
+    margin: auto;
+}
+.information div.first{
+    text-align: center;
+    padding: 3rem 0;
+} 
+.information div.first p{
+    margin-bottom: 0.5rem;
+}
+.information div.second{
+    padding-top: 2.5rem;
+}
+.tools{
+    padding: 0 14%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.tools div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.heading{
+    font-size: 1.2rem;
+    color: blueviolet;
+    padding-left: 0.6rem;
+    width: 100%;
+}
+.tools div a{
+    font-size: 1.2rem;
+    color: black;
+    padding: 0.6rem;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.tools div a:hover{
+    background: rgb(0, 89, 255);
+    color: white;
+}
+.tools div a i{
+    margin-right: 0.3rem;
+    padding: 0.4rem;
+    background: rgb(0, 89, 255);
+    color: white;
+    border-radius: 0.3rem;
+}
+@media(max-width: 1000px){
+    .tools{
+        padding: 0 10%;
+    }
+}
+@media(max-width: 900px){
+    .tools{
+        padding: 0 6%;
+    }
+}
+@media(max-width: 800px){
+    .tools{
+        padding: 0 2%;
+    }
+}
+@media(max-width: 750px){
+    .information {
+        padding-bottom: 15rem;
+    }
+    .tools{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .tools div a {
+        max-width: 20rem;
+    }
+}

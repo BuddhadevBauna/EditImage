@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+}
+.contact-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex: 0 1 28rem;
+    margin: 0 3.5rem;
+    flex-direction: column;
+}
+.container h1{
+    text-align: center;
+    font-size: 1.5rem;
+    color: blueviolet;
+    margin-bottom: 0.5rem;
+}
+.message-me{
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 0.6rem;
+    padding: 1.5rem;
+}
+.form-container input,
+.form-container textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    padding-left: 0.6rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.form-container input{
+    height: 2.5rem;
+}
+.form-container textarea{
+    padding-top: 0.6rem;
+    max-width: 5rem;
+    max-height: 6rem;
+    min-width: 100%;
+    min-height: 5.5rem;
+}
+.form-container{
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+.form-container i{
+    position: absolute;
+    right: 3%;
+    top: 14%;
+    visibility: hidden;
+}
+.form-container small{
+    visibility: hidden;
+    margin-left: 0.2rem;
+}
+.message-btn{
+    border-radius: 0.5rem;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 0.125rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+}
+.message-btn:hover{
+    background-color: rgb(130, 0, 252);
+}
+@media(max-width: 450px){
+    .container{
+        margin: 0 2.5rem;
+    }
+    .container h1{
+        font-size: 1.3rem;
+    }
+}
+@media(max-width: 350px){
+    .container h1{
+        font-size: 1rem;
+    }
+    .form-container input{
+        height: 2rem;
+    }
+    .form-container input, 
+    .form-container textarea{
+        font-size: 0.9rem;
+    }
+}
+@media(max-height: 400px){
+    .contact-form {
+        height: auto;
+        padding: 2rem 0;
+    }
+}
+/* js style */
+.form-container.success input,
+.form-container.success textarea{
+    border: solid 0.125rem green;
+}
+.form-container.success i.fa-circle-check{
+    visibility: visible;
+    color: green;
+}
+.form-container.error input,
+.form-container.error textarea{
+    border: solid 0.125rem red;
+}
+.form-container.error i.fa-circle-exclamation,
+.form-container.error small{
+    visibility: visible;
+    color: red;
+}

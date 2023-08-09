@@ -1,0 +1,28 @@
+#setting .setting-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+#setting .setting-content div{
+    display: grid;
+    grid-template-columns: 1fr 0.3fr;
+    gap: 0.125rem;
+    width: 100%;
+    cursor: pointer;
+    padding-left: 3.5rem;
+}
+#setting .setting-content i{
+    font-size: 1.8rem;
+    margin-top: 0.2rem;
+    margin-right: 0.4rem;
+    color: blue;
+}
+#setting .setting-content p{
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+span#deg{
+    visibility: hidden;
+}

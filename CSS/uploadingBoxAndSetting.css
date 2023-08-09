@@ -1,0 +1,295 @@
+#uploading-box{
+    background-color: white;
+}
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 4.4rem);
+}
+@media(max-height:400px){
+    #uploading-box{
+        padding: 2rem 0;
+    }
+    #main{
+        height: auto !important;
+    }
+}
+#main .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 18rem;
+    width: 23rem;
+    border-radius: 0.75rem;
+    background-color: whitesmoke;
+    cursor: context-menu;
+}
+.wrapper p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+#main .upload-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 14rem;
+    width: 20rem;
+    border: dashed 0.125rem;
+    border-radius: 0.5rem;
+}
+.upload-box i{
+    font-size: 4.5rem;
+    color: blue;
+    cursor: pointer;
+}
+.upload-box span{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.upload-box span.button{
+    color: blue;
+    cursor: pointer;
+}
+.upload-box span.third{
+    font-size: 0.9rem;
+    color: grey;
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+.wrapper small{
+    font-size: 0.9rem;
+    color: red;
+    margin: 0.25rem 0 0.4rem;
+    display: none;
+}
+/* ------------------js Style------------------ */
+#main .upload-box.active{
+    border: solid 0.125rem blue;
+}
+/* -------------------------------------------- */
+@media(max-width: 500px){
+    #main .wrapper{
+        height: 17rem;
+        width: 20rem;
+    }
+    .wrapper p{
+        font-size: 1.4rem;
+    }
+    #main .upload-box{
+        height: 13rem;
+        width: 18rem;
+    }
+    .upload-box i{
+        font-size: 4rem;
+    }
+    .upload-box span{
+        font-size: 1.3rem;
+    }
+    .upload-box span.third{
+        font-size: 0.8rem;
+    }
+    .wrapper small{
+        font-size: 0.8rem;
+    }
+}
+@media(max-width: 350px){
+    #main .wrapper{
+        height: 15rem;
+        width: calc(100vw - 2rem);
+    }
+    .wrapper p{
+        font-size: 1.3rem;
+    }
+    #main .upload-box{
+        width: calc(100vw - 4rem);
+        height: 11rem;
+    }
+    .upload-box i{
+        font-size: 3.5rem;
+    }
+    .upload-box span{
+        font-size: 1.2rem;
+    }
+    .upload-box span.third{
+        font-size: 0.7rem;
+    }
+    .wrapper small{
+        font-size: 0.7rem;
+    }
+}
+@media(max-width: 350px){
+    .wrapper p{
+        font-size: 1.2rem;
+    }
+}
+/* ------------------After upload the image------------------ */
+/* -----------js style----------- */
+.change-uploading-box{
+    display: flex;
+    gap: 0.5rem;
+}
+@media(max-height:400px){
+    .change-uploading-box{
+        padding: 0 !important;
+    }
+}
+/* ----------------------------- */
+#uploading-box .main-container{
+    flex: 1 1 47rem;
+    margin: 1rem 0 0 2rem;
+}
+#uploading-box .container{
+    height: calc(100vh - 10rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.4rem;
+    background-color: #f7f6f5;
+    border: 0.1rem solid rgba(0,0,0,.125);
+    padding: 0 8%;
+} 
+#setting{
+    display: none;
+}
+/* -----------js style----------- */
+#setting.visible{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 10rem);
+    background: #ffffffd3;
+    border-radius: 0.4rem;
+    border: 0.1rem solid #00000020;
+    flex: 1 0 31rem;
+    margin: 1rem 2rem 0 0;
+    text-align: center;
+    padding: 0.125rem;
+}
+/* ----------------------------- */
+#setting h1{
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    width: 100%;
+    text-align: center;
+    background-color: #f7f6f5;
+    padding: 0.625rem 0;
+}
+#setting .setting-content{
+    padding: 3rem 0;
+}
+@media (min-width: 576px){
+    .main-container .container{
+        /* max-width: initial; */
+    }
+}
+@media (max-height: 516px) {
+    #uploading-box .container{
+        height: 22rem;
+    }
+    #setting.visible{
+        height: 22rem;
+    }
+}
+#button{
+    display: none;
+}
+/* -----------js style----------- */
+#button.visible1{
+    display: flex;
+    justify-content: end;
+    margin: 0.8rem 2rem 0.8rem 0;
+}
+/* ----------------------------- */
+#button .btn{
+    width: 9rem;
+    padding: 0.7rem 0.125rem;
+    border: none;
+    outline: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #8f79fd;
+    color: white;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+#button .download-btn:hover{
+    background: #6e51ff;
+}
+#button .refresh-btn{
+    background: #ffffffd3;
+    border: 1px solid #8f79fd;
+    color: #8f79fd;
+    margin-right: 0.5rem;
+}
+#button .refresh-btn:hover{
+    background: #6e51ff;
+    color: white;
+}
+/* -----------js style----------- */
+#responsive{
+    width: 100%;
+    height: auto;
+}
+/* ----------------------------- */
+@media(max-width: 800px){
+    #uploading-box{
+        flex-wrap: wrap;
+    }
+    #uploading-box .main-container{
+        margin: 1rem 1.5rem 0;
+    }
+    #uploading-box .container {
+        height: auto;
+        padding: 5%;
+    }
+    #setting.visible{
+        margin: 0 1.5rem;
+        flex-shrink: 1;
+        height: auto;
+    }
+    #button.visible1{
+        margin: 1rem 1.5rem;
+    }
+    #button .download-btn,#button .refresh-btn{
+        width: 50%;
+        padding: 0.625rem;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        word-spacing: 0.2rem;
+    }
+}
+@media(max-width: 500px){
+    #uploading-box .main-container{
+        margin: 1rem 1rem 0;
+    }
+    #setting.visible{
+        margin: 0 1rem;
+    }
+    #button.visible1{
+        margin: 1rem 1rem;
+    }
+    #button .download-btn,#button .refresh-btn{
+        font-size: 0.8rem;
+    }
+    #setting h1{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width: 400px){
+    #button.visible1{
+        flex-wrap: wrap;
+    }
+    #button .download-btn,#button .refresh-btn{
+        width: 100%;
+        font-size: 1rem;
+    }
+    #button .refresh-btn{
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+}
