@@ -166,7 +166,7 @@ function setSuccessMessage(input){
 //defining successMessage function
 function submitMailAndSuccessMessage(sRate,count){
   if(sRate==count){ 
-    Mail();
+    sendEMail();
     Swal.fire(
       "Welcome!",
       "Message send successfully!",
@@ -181,15 +181,19 @@ function submitMailAndSuccessMessage(sRate,count){
 }
 
 
-function Mail(){
+function sendEMail(){
   let name=document.querySelector('#name').value,
   email =document.querySelector('#email').value,
   message =document.querySelector('#message').value;
   Email.send({
-    SecureToken : "814e6e02-affa-4ba9-8c13-2617912f0746",
-    To : 'baunabuddhadev2021@gmail.com',
-    From : "baunabuddhadev2021@gmail.com",
+    Host : "smtp.elasticemail.com",
+    Username : "baunabuddhadev2021@gmail.com",
+    Password : "19F577E4B9F6DC24D7FEF1007D917298C248",
+    To : 'baunabuddhadev2001@gmail.com',
+    From : 'baunabuddhadev2021@gmail.com',
     Subject : "Mail From Contact Form...",
-    Body : "User Name: "+ name+ "<br/>User Email: "+ email +"<br/>User Message: "+ message,
+    Body : "User Name: "+ name+ 
+    "<br/>User Email: "+ email +
+    "<br/>User Message: "+ message,
   })
 }
