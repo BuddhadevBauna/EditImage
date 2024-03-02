@@ -30,6 +30,7 @@
     display: flex;
     gap: 1rem;
     color: black;
+    height: 100%;
 }
 .content .content-list:hover .content-link{
     color: white;
